@@ -1,0 +1,114 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+
+}
+
+.main img{
+  margin-bottom: 40px;;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(5);
+  }
+}
+.main img{
+  animation: fadeIn 1s;
+}
+.main h1 {
+  margin-bottom: 10px;
+  color: #fff;
+  animation: fadeIn 1s;
+}
+
+.main p{
+  animation: fadeIn 1s;
+}
+
+.hero {
+
+  /* Base / White */
+  background: transparent;
+  text-align: center;
+}
+
+
+
+.hero form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.hero form input {
+  background: #111;
+  border: 0;
+  border-radius: 4px;
+  outline: 0;
+  padding: 15px;
+  margin-top: 10px;
+  height: 48px;
+  font-family: inherit;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: border ease-in-out 0.2s;
+  animation: fadeIn 1s;
+  font-size: 14px;
+  text-align: center;
+}
+.hero form input:hover,
+.hero form input:focus {
+  border: 1px solid #2f2f2f;
+}
+
+.hero form button {
+  background-color: #27F1C1;
+  border-radius: 4px;
+  outline: 0;
+  border: 0;
+  padding: 15px;
+  margin-top: 20px;
+  color: #060606;
+  height: 48px;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.2s;
+  animation: fadeIn 1s;
+}
+
+.hero form button:hover{
+  background-color: #9dd91f;
+}
+
+.copyright{
+  margin-top: 40px;
+color: #424242;
+font-size: 14px;
+}
+
+@media (min-width: 611px) {
+  .main{
+    padding: 6rem;
+    min-height: 100vh;
+  max-width: 640px;
+  }
+  .hero form{
+    width: 75%;
+    margin: 0 auto;
+  }
+}
